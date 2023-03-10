@@ -6,62 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <title>Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Appliance service</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+      <nav class="position-fixed w-100 bg-white">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap justify-content-center py-3 border-bottom"
           >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap" />
-            </svg>
-            <span class="fs-4">Simple header</span>
-          </a>
+            <div
+              href=""
+              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none align-items-center"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap" />
+              </svg>
+              <span class="fs-4">Appliance service</span>
+              <a class="text-decoration-none ps-3 pt-2" href="tel:866-427-7516">
+                866-427-7516
+              </a>
+            </div>
 
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Home</a>
-            </li>
-          </ul>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#why_us" class="nav-link">Why us?</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#addresses" class="nav-link">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a href="#our_work" class="nav-link">Our work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page"
+                  >Book now</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
       <div class="header__hero">
         <div class="container col-xxl-8 px-4 py-5">
           <div class="row flex align-items-center g-5 py-5">
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3">
-                Responsive left-aligned hero with image
+                The world's best appliance service
               </h1>
               <p class="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, reiciendis est. Cum fuga laudantium eum placeat sint voluptate expedita voluptatem est in iure accusantium hic, eaque impedit explicabo? Vitae, id?
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a
+                href="#addresses"
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  See locations
+              </a>
                 <button
                   type="button"
                   class="btn btn-primary btn-lg px-4 me-md-2"
                 >
-                  Primary
+                  Book now
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-secondary btn-lg px-4"
-                >
-                  Default
-                </button>
+                
               </div>
             </div>
 
@@ -80,21 +95,24 @@
       </div>
     </header>
     <main>
+      <!-- Form (Get your free estimate)-->
+
       <div class="container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
+          <div class="col-lg-6 text-center text-lg-start">
             <h1 class="display-4 fw-bold lh-1 mb-3">Get your free estimate</h1>
             <p class="col-lg-10 fs-4">Not that much text to be inserted here</p>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-light">
+          <div class="col-md-10 mx-auto col-lg-6">
+            <form class="p-4 border rounded-3 bg-light" id="free_estimate">
               <div class="row g-3">
                 <div class="col-sm-6">
                   <input
                     type="text"
                     class="form-control"
                     id="firstName"
-                    placeholder=""
+                    name="firstName"
+                    placeholder="First Name*"
                     value=""
                     required
                   />
@@ -107,8 +125,9 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="firstName"
-                    placeholder=""
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name*"
                     value=""
                     required
                   />
@@ -119,12 +138,12 @@
 
                 <div class="col-12">
                   <div class="input-group has-validation">
-                    <span class="input-group-text">@</span>
                     <input
                       type="text"
                       class="form-control"
-                      id="username"
-                      placeholder="Username"
+                      id="email"
+                      name="email"
+                      placeholder="Email address*"
                       required
                     />
                     <div class="invalid-feedback">
@@ -137,8 +156,9 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="firstName"
-                    placeholder=""
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone*"
                     value=""
                     required
                   />
@@ -151,8 +171,9 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="firstName"
-                    placeholder=""
+                    id="zip"
+                    name="zip"
+                    placeholder="Zip Code*"
                     value=""
                     required
                   />
@@ -161,14 +182,9 @@
                   </div>
                 </div>
 
-                <div class="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" value="remember-me" /> Remember me
-                  </label>
-                </div>
-
-                <button class="w-100 btn btn-lg btn-primary" type="submit">
-                  Sign up
+                <button class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal" type="submit">
+                  Send
                 </button>
                 <hr class="my-4" />
                 <small class="text-muted"
@@ -179,7 +195,248 @@
           </div>
         </div>
       </div>
+
+      <!-- Cons Marketing -->
+
+      <div class="container marketing" id="why_us">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2 class="fw-normal">Heading</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2 class="fw-normal">Heading</h2>
+            <p>
+              Another exciting bit of representative placeholder content. This
+              time, we've moved on to the second column.
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2 class="fw-normal">Heading</h2>
+            <p>
+              And lastly this, the third column of representative placeholder
+              content.
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+
+      <!-- Addresses -->
+
+      <div class="container" id="addresses">
+        <h2 class="text-center mb-5 fs-1">
+          Locations
+        </h1>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex mb-3 justify-content-between">
+                  <div class="col-6">
+                    <h4 class="text-start mb-3">City name</h1>
+                    <p class="text-start">
+                      1400 S. Congress Ave., Austin, TX, 78704
+                    </p>
+                  </div>
+                  <div>
+                    <a class="d-block text-decoration-none mt-5" href="tel:1-866-427-7516" >1-866-427-7516</a>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Book now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex mb-3 justify-content-between">
+                  <div class="col-6">
+                    <h4 class="text-start mb-3">City name</h1>
+                    <p class="text-start">
+                      1400 S. Congress Ave., Austin, TX, 78704
+                    </p>
+                  </div>
+                  <div>
+                    <a class="d-block text-decoration-none mt-5" href="tel:1-866-427-7516" >1-866-427-7516</a>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Book now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex mb-3 justify-content-between">
+                  <div class="col-6">
+                    <h4 class="text-start mb-3">City name</h1>
+                    <p class="text-start">
+                      1400 S. Congress Ave., Austin, TX, 78704
+                    </p>
+                  </div>
+                  <div>
+                    <a class="d-block text-decoration-none mt-5" href="tel:1-866-427-7516" >1-866-427-7516</a>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Book now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- work examples -->
+
+      <div class="album bg-light" id="our_work">
+        <div class="container">
+          <h2 class="text-center mb-5 fs-1">Our work</h1>
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+            id="gallery"
+          >
+            <div class="col d-none">
+              <div class="card shadow-sm">
+                <img src="./img/examples/1.jpg" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#why_us" class="nav-link px-2 text-muted">Why us?</a>
+          </li>
+          <li class="nav-item">
+            <a href="#addresses" class="nav-link px-2 text-muted">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#our_work" class="nav-link px-2 text-muted">Our work</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Request sent!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Thank you for request!</p>
+        <p>We will contact you soon...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

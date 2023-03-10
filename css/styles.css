@@ -1,138 +1,174 @@
 * {
-    box-sizing:border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 header {
-    /* background-image: url('https://removery.com/wp-content/themes/removery/images/theme/hero-texture.png'); */
-    background-size: cover;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+  /* background-image: url('https://removery.com/wp-content/themes/removery/images/theme/hero-texture.png'); */
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+header nav {
+  z-index: 10;
+}
+
+.header__hero {
+  padding-top: 50px;
+}
+
+#why_us {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+#addresses {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+#our_work {
+  padding-top: 140px;
+  padding-bottom: 60px;
 }
 
 .header__main {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 1.75rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.75rem;
 }
 
 .header__main__nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .header__main__nav ul li {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 li.book__button {
-    background-color: #00abb2;
-    transition: background-color .2s ease-in-out;
-}  
+  background-color: #00abb2;
+  transition: background-color 0.2s ease-in-out;
+}
 
 li.book__button a {
-    color: white;
+  color: white;
 }
 
 li.book__button:hover {
-    background-color: #008489;
+  background-color: #008489;
 }
 
 .header__hero__inner {
-    padding: 2rem 1.75rem;
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
+  padding: 2rem 1.75rem;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .header__hero__inner__left {
-    width: 50%;
-    padding-right: 1rem;
+  width: 50%;
+  padding-right: 1rem;
 }
 
 .header__hero__inner__left h1 {
-    font-size: 56px;
-    margin-bottom: 1rem;
+  font-size: 56px;
+  margin-bottom: 1rem;
 }
 
 .header__hero__inner__left p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .header__hero__inner__left__call_to_action_buttons {
-    display: flex;
+  display: flex;
 }
 
 .header__hero__inner__left__call_to_action_buttons button {
-    padding: 8px 24px;
+  padding: 8px 24px;
 }
 
 .header__hero__inner__left__call_to_action_buttons button.first_button {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .header__hero__inner__left__call_to_action_buttons button.second_button {
-    
 }
 
 .header__hero__inner__right {
-    width: 50%;
+  width: 50%;
 }
 
 .header__hero__inner__right img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 section.form {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .form__inner {
-    display: flex;
-    max-width: 1000px;
-    margin: auto;
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .form__inner__content {
-    width: 50%;
-    padding-right: 2rem;
+  width: 50%;
+  padding-right: 2rem;
 }
 
 .form__inner__content h1 {
-    font-size: 38px;
-    margin-bottom: 1rem;
+  font-size: 38px;
+  margin-bottom: 1rem;
 }
 
 .form__inner__form {
-    width: 50%;
+  width: 50%;
 }
 
 .form__inner__form input {
-    width: 100%;
-    display: block;
-    padding: 13px 16px;
+  width: 100%;
+  display: block;
+  padding: 13px 16px;
 }
 
 .form__inner__form .form-control {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .form__inner__form .double {
-    display: flex;
+  display: flex;
 }
 
 .form__inner__form .double input:first-child {
-    margin-right: 12px;
+  margin-right: 12px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  border-radius: 5px !important;
+}
+
+.card img {
+  max-height: 335px;
+  border-radius: 5px;
 }
