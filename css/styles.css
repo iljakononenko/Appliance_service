@@ -172,3 +172,8 @@ section.form {
   max-height: 335px;
   border-radius: 5px;
 }
+
+.services__icon {
+  max-width: 156px;
+  max-height: 156px;
+}
