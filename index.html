@@ -24,19 +24,15 @@
                 <use xlink:href="#bootstrap" />
               </svg>
               <span class="fs-4">Appliance service</span>
-              <a class="text-decoration-none ps-3 pt-2" href="tel:866-427-7516">
-                866-427-7516
-              </a>
             </div>
 
             <ul class="nav nav-pills">
               <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
                 <a href="#why_us" class="nav-link">Services</a>
               </li>
-
+              <li class="nav-item">
+                <a href="#booking" class="nav-link">Booking</a>
+              </li>
               <li class="nav-item">
                 <a href="#addresses" class="nav-link">Serving areas</a>
               </li>
@@ -52,30 +48,34 @@
           </div>
         </div>
       </nav>
+      <div id="header-fixer"></div>
       <div class="header__hero">
-        <div class="container col-xxl-8 px-4 py-5">
+        <div class="container col-xxl-8 px-4">
           <div class="row flex align-items-center g-5 py-5">
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3 text-uppercase">
                 We fix appliances
               </h1>
-              <p class="lead">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, reiciendis est. Cum fuga laudantium eum placeat sint voluptate expedita voluptatem est in iure accusantium hic, eaque impedit explicabo? Vitae, id?
+              <p class="lead fs-3">
+                Trust the appliance repair experts
               </p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start align-items-center">
                 <a
                 href="tel:866-427-7516"
                   type="button"
-                  class="btn btn-outline-secondary btn-lg px-4"
+                  class="btn btn-primary btn-lg px-4"
                 >
                   Call us
               </a>
-                <button
-                  type="button"
+              <span class="fs-5 mx-2">
+                or
+              </span>
+                <a
+                  href="#"
                   class="btn btn-primary btn-lg px-4 me-md-2"
                 >
                   Book now
-                </button>
+            </a>
                 
               </div>
             </div>
@@ -95,116 +95,13 @@
       </div>
     </header>
     <main>
-      <!-- Form (Get your free estimate)-->
-
-      <div class="container col-xl-10 col-xxl-8 px-4 pt-5">
-        <div class="row align-items-center g-lg-5 pt-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 mb-3">Get your free estimate</h1>
-            <p class="col-lg-10 fs-4">Not that much text to be inserted here</p>
-          </div>
-          <div class="col-md-10 mx-auto col-lg-6">
-            <form class="p-4 border rounded-3 bg-light" id="free_estimate">
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="First Name*"
-                    value=""
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Last Name*"
-                    value=""
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="input-group has-validation">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Email address*"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Your username is required.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone*"
-                    value=""
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="zip"
-                    name="zip"
-                    placeholder="Zip Code*"
-                    value=""
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-
-                <button class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
-                data-bs-target="#modal" type="submit">
-                  Send
-                </button>
-                <hr class="my-4" />
-                <small class="text-muted"
-                  >By clicking Sign up, you agree to the terms of use.</small
-                >
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
 
       <!-- Cons Marketing -->
 
       <div class="container marketing" id="why_us">
         <!-- Three columns of text below the carousel -->
-        <h2 class="fs-1 text-center">
-          Services
-        </h2>
-        <h2 class="text-center mb-5">
-          We serve all brands of:
+        <h2 class="fs-1 text-center mb-5">
+          We repair all household appliances
         </h2>
         <div class="row">
           <div class="col-lg-4">
@@ -250,19 +147,132 @@
           </div>
           <!-- /.col-lg-4 -->
         </div>
-        <h4 class="text-center my-3 fw-normal">
-          We work on all brands: Samsung, Bosh, Whirlpool, Kitchen Aid, General Electric, LG, Kenmore, Amana, Maytag
-        </h4>
+        <!-- /.row -->
+      </div>
+
+      <!-- Brands -->
+
+      <div class="container" id="booking">
+        <h2 class="text-center mb-5 fs-1">
+          Brands we repair
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-2">
+            <img src="./img/brands/kenmore.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/whirlpool.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/frigidaire.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/maytag.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/GE.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/kitchenaid.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/jenn-air.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/LG.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/electrolux.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/bosch.svg" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img src="./img/brands/samsung.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- How it works -->
+
+      <div class="container" id="booking">
+        <h2 class="text-center mb-5 fs-1">
+          How it works
+        </h2>
+        <div class="row">
+          <div class="col-lg-3">
+            <div>
+              <img class="services__icon" src="./img/booking/calendar.svg" alt="">
+            </div>
+
+            <h2 class="fw-normal">Easy scheduling</h2>
+            <p class="fs-5">
+              Call us or Book online in less than a minute
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+            <div>
+              <img class="services__icon" src="./img/booking/chat.svg" alt="">
+            </div>
+
+            <h2 class="fw-normal">Service call fee</h2>
+            <p class="fs-5">
+              65$<br>It includes trip charge and diagnosis fee. If we go with repairs it is waived.
+Technician will come to your home to diagnose and give you an exact quote for repairs.
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+            <div>
+              <img class="services__icon" src="./img/booking/warranty.svg" alt="">
+            </div>
+
+            <h2 class="fw-normal">Warranty</h2>
+            <p class="fs-5">
+              We provide 3 months free warranty
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+            <div>
+              <img class="services__icon" src="./img/booking/payment.svg" alt="">
+            </div>
+
+            <h2 class="fw-normal">We accept</h2>
+            <ul class="fs-5 px-0" style="list-style: none;">
+              <li>Credit cards</li> 
+              <li>Checks</li>
+              <li>Cash</li>
+              <li>American Express</li>
+            </p>
+            <p class="d-none">
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+        </div>
         <!-- /.row -->
       </div>
 
       <!-- Addresses -->
 
       <div class="container" id="addresses">
-        <h2 class="text-center mb-5 fs-1">
+        <h2 class="text-center mb-5 display-5 fw-bold">
           Serving areas
         </h1>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <h3 class="my-3 text-center fw-normal">
+          Allen, Garland, Frisco, The Colony, Lewisville, Lucas, McKinney, Murphy, Plano, Richardson, Sachse
+        </h3>
+        <div class="d-none row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-body">
@@ -338,11 +348,80 @@
         </div>
       </div>
 
+      <!-- Form (Get your free estimate)-->
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-md-5">
+        <div class="row align-items-center g-lg-5 py-md-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Get your free estimate</h1>
+            <p class="col-lg-10 fs-4">Not that much text to be inserted here</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-6">
+            <form class="p-4 border rounded-3 bg-light" id="free_estimate">
+              <div class="row g-3">
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name*"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid Name is required.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone*"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    name="zip"
+                    placeholder="Zip Code*"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+
+                <button class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal" type="submit">
+                  Send
+                </button>
+                <hr class="my-4 d-none" />
+                <small class="text-muted d-none"
+                  >By clicking Sign up, you agree to the terms of use.</small
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <!-- work examples -->
 
       <div class="album bg-light" id="our_work">
         <div class="container">
-          <h2 class="text-center mb-5 fs-1">Our work</h1>
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
             id="gallery"
@@ -356,12 +435,12 @@
           </div>
         </div>
         <div class="text-center my-5">
-          <button
-                  type="button"
+          <a
+                  href="tel:866-427-7516"
                   class="btn btn-primary btn-lg px-4 me-md-2"
                 >
-                  Book now
-                </button>
+                  Call us
+        </a>
         </div>
       </div>
     </main>
@@ -383,10 +462,10 @@
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">Home</a>
+            <a href="#why_us" class="nav-link px-2 text-muted">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#why_us" class="nav-link px-2 text-muted">Services</a>
+            <a href="#booking" class="nav-link px-2 text-muted">Booking</a>
           </li>
           <li class="nav-item">
             <a href="#addresses" class="nav-link px-2 text-muted">Serving area</a>
@@ -403,12 +482,19 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Request sent!</h1>
+        <div class="d-flex align-items-center">
+          <h5 class="modal-title" id="exampleModalLabel">The request has been sent!</h5>
+        <span class="ms-1" style="min-width: 20px;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+          </svg>
+        </span> 
+        </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Thank you for request!</p>
-        <p>We will contact you soon...</p>
+        <p>Thank you!</p>
+        <p>We will call you back shortly</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>

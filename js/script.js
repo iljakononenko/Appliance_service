@@ -13,4 +13,10 @@ $(document).ready(function () {
   $("#free_estimate").on("submit", function (e) {
     e.preventDefault();
   });
+
+  $("#header-fixer").css("paddingTop", $("nav.position-fixed").outerHeight());
+
+  $(window).resize(function () {
+    $("#header-fixer").css("paddingTop", $("nav.position-fixed").outerHeight());
+  });
 });
