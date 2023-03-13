@@ -14,9 +14,9 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
-  $("#header-fixer").css("paddingTop", $("nav.position-fixed").outerHeight());
+  $("#header-fixer").css("paddingTop", $("nav.fixed-top").outerHeight());
 
   $(window).resize(function () {
-    $("#header-fixer").css("paddingTop", $("nav.position-fixed").outerHeight());
+    $("#header-fixer").css("paddingTop", $("nav.fixed-top").outerHeight());
   });
 });

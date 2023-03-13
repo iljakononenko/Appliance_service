@@ -11,22 +11,18 @@
   </head>
   <body>
     <header class="header">
-      <nav class="position-fixed w-100 bg-white">
+      <nav class="navbar navbar-expand-md fixed-top w-100 bg-white">
         <div class="container">
           <div
-            class="d-flex flex-wrap justify-content-center py-3 border-bottom"
+            class="d-flex flex-wrap justify-content-between py-3 border-bottom w-100"
           >
-            <div
-              href=""
-              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none align-items-center"
-            >
-              <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap" />
-              </svg>
-              <span class="fs-4">Appliance service</span>
-            </div>
+          <span class="fs-4">Appliance service</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <ul class="nav nav-pills">
+          <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse">
+            <ul class="nav nav-pills flex-column flex-md-row">
               <li class="nav-item">
                 <a href="#why_us" class="nav-link">Services</a>
               </li>
@@ -46,20 +42,22 @@
               </li>
             </ul>
           </div>
+            
+          </div>
         </div>
       </nav>
       <div id="header-fixer"></div>
       <div class="header__hero">
         <div class="container col-xxl-8 px-4">
-          <div class="row flex align-items-center g-5 py-5">
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold lh-1 mb-3 text-uppercase">
+          <div class="row flex justify-content-center align-items-center g-5 py-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <h1 class="display-5 fw-bold lh-1 mb-3 text-uppercase text-center text-lg-start">
                 We fix appliances
               </h1>
-              <p class="lead fs-3">
+              <p class="lead fs-3 text-center text-lg-start">
                 Trust the appliance repair experts
               </p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start align-items-center">
+              <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start align-items-center">
                 <a
                 href="tel:866-427-7516"
                   type="button"
@@ -67,7 +65,7 @@
                 >
                   Call us
               </a>
-              <span class="fs-5 mx-2">
+              <span class="text-center fs-5 mx-2">
                 or
               </span>
                 <a
@@ -80,7 +78,7 @@
               </div>
             </div>
 
-            <div class="col-10 col-sm-8 col-lg-6">
+            <div class="col-10 col-sm-8 col-lg-6 order-1 order-lg-2">
               <img
                 src="./img/hero/hero_1.webp"
                 class="d-block mx-lg-auto img-fluid"
@@ -157,37 +155,37 @@
           Brands we repair
         </h2>
         <div class="row justify-content-center">
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/kenmore.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/whirlpool.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/frigidaire.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/maytag.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/GE.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/kitchenaid.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/jenn-air.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/LG.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/electrolux.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/bosch.svg" alt="">
           </div>
-          <div class="col-lg-2">
+          <div class="col-6 col-lg-2">
             <img src="./img/brands/samsung.svg" alt="">
           </div>
         </div>
@@ -200,7 +198,7 @@
           How it works
         </h2>
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div>
               <img class="services__icon" src="./img/booking/calendar.svg" alt="">
             </div>
@@ -214,7 +212,7 @@
             </p>
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div>
               <img class="services__icon" src="./img/booking/chat.svg" alt="">
             </div>
@@ -229,7 +227,7 @@ Technician will come to your home to diagnose and give you an exact quote for re
             </p>
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div>
               <img class="services__icon" src="./img/booking/warranty.svg" alt="">
             </div>
@@ -243,7 +241,7 @@ Technician will come to your home to diagnose and give you an exact quote for re
             </p>
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div>
               <img class="services__icon" src="./img/booking/payment.svg" alt="">
             </div>
@@ -350,7 +348,7 @@ Technician will come to your home to diagnose and give you an exact quote for re
 
       <!-- Form (Get your free estimate)-->
 
-      <div class="container col-xl-10 col-xxl-8 px-4 py-md-5">
+      <div class="container col-xl-10 col-xxl-8 px-4 pb-5 py-md-5">
         <div class="row align-items-center g-lg-5 py-md-5">
           <div class="col-lg-6 text-center text-lg-start">
             <h1 class="display-4 fw-bold lh-1 mb-3">Get your free estimate</h1>
