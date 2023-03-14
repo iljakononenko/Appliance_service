@@ -189,3 +189,18 @@ section.form {
 #booking .row .col-lg-2 img {
   height: 150px;
 }
+
+.call_us {
+  background-color: #0d91fd !important;
+  border-color: #0d91fd !important;
+}
+
+.logo-img img {
+  width: 32px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.logo-color {
+  color: #32bea6 !important;
+}
