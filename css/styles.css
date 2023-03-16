@@ -204,3 +204,21 @@ section.form {
 .logo-color {
   color: #32bea6 !important;
 }
+
+@media screen and (min-width: 1024px) {
+  #addresses {
+    padding: 85px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #addresses {
+    padding: 75px 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #addresses {
+    padding: 65px 0;
+  }
+}
