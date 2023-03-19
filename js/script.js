@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  for (let i = 1; i < 48; i++) {
+  for (let i = 1; i < 47; i++) {
     let element = `
 <div class="col">
   <div class="card shadow-sm">
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     Email.send({
       SecureToken: "1bd4ec59-a493-466f-931a-39ea36c9b5cb",
-      To: "iljakononenko2@gmail.com",
+      To: "oemservice2023@gmail.com",
       From: "iljakononenko3@gmail.com",
       Subject: "New Order!",
       Body: `Name: ${name}<br>Phone: ${phone}<br>Zip: ${zip}<br>Notes: ${notes}`,
