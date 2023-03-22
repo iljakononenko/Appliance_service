@@ -10,7 +10,46 @@ $(document).ready(function () {
     $("#gallery").append(element);
   }
 
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    stagePadding: 60,
+    dots: true,
+    dotsEach: 2,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 10,
+        dots: false,
+      },
+      768: {
+        items: 1,
+        stagePadding: 60,
+      },
+      1024: {
+        items: 1,
+        stagePadding: 100,
+      },
+      1200: {
+        items: 4,
+        stagePadding: 40,
+      },
+    },
+  });
+
   const myModalAlternative = new bootstrap.Modal("#modal", {});
+
+  $(".service-svg-wrapper").on("click", function () {
+    // console.log($(this).attr("data-service-type"));
+    $("#notes").val(
+      "Hi, I need help with my " + $(this).attr("data-service-type")
+    );
+    $("html, body").animate(
+      {
+        scrollTop: $("#contact_form").offset().top,
+      },
+      0
+    );
+  });
 
   $("#free_estimate").on("submit", function (e) {
     e.preventDefault();
