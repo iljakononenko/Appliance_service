@@ -26,6 +26,10 @@
             </div>
             <span class="fs-5">Appliance repair</span>
           </a>
+          <a href="tel:(469) 975-72-73" class="align-self-center ms-5 text-decoration-none fs-5 d-none d-lg-block">
+            <img src="./img/phone.jpg" width="28" height="28" alt="">
+            (469) 975-72-73
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,15 +38,15 @@
             <div class="border-top mt-3">
 
             </div>
-            <ul class="nav nav-pills flex-column flex-md-row">
+            <ul class="nav nav-pills flex-column flex-md-row" id="navigation-links">
+              <li class="nav-item">
+                <a href="#addresses" class="nav-link">Serving areas</a>
+              </li>
               <li class="nav-item">
                 <a href="#why_us" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
                 <a href="#booking" class="nav-link">How it works</a>
-              </li>
-              <li class="nav-item">
-                <a href="#addresses" class="nav-link">Serving areas</a>
               </li>
               <li class="nav-item">
                 <a href="#contact_form" class="nav-link active" aria-current="page"
@@ -58,7 +62,7 @@
       <div id="header-fixer"></div>
       <div class="header__hero">
         <div class="container col-xxl-8 px-4">
-          <div class="row flex justify-content-center align-items-center g-5 py-5">
+          <div class="row flex justify-content-center align-items-center g-5 py-md-5">
             <div class="col-lg-6 order-2 order-lg-1">
               <h1 class="display-5 fw-bold lh-1 mb-3 text-uppercase text-center text-lg-start">
                 We fix appliances
@@ -103,23 +107,26 @@
           </div>
         </div>
       </div>
+      <div id="addresses">
+
+      </div>
     </header>
     <main>
 
     <!-- Addresses -->
 
-    <div class="container" id="addresses">
+    <div class="container serving-areas">
       <h2 class="text-center mb-3 mb-md-5 display-5 fw-bold">
         Serving areas
       </h1>
-      <h3 class="my-3 text-center fw-normal">
+      <h3 class="my-3 text-center fw-normal" id="why_us">
         Allen, Garland, Frisco, The Colony, Lewisville, Lucas, McKinney, Murphy, Plano, Richardson, Sachse, Prosper, Dallas
       </h3>
     </div>
 
       <!-- Cons Marketing -->
 
-      <div class="container marketing" id="why_us">
+      <div class="container marketing">
         <!-- Three columns of text below the carousel -->
         <h2 class="text-center mb-5 display-5 fw-bold">
           We repair all household appliances
@@ -231,7 +238,7 @@
 
       <!-- How it works -->
 
-      <div class="container" id="booking">
+      <div class="container booking" id="booking">
         <h2 class="text-center mb-5 display-5 fw-bold">
           How it works
         </h2>
@@ -304,7 +311,7 @@ Technician will come to your home to diagnose and give you an exact quote for re
 
       <div class="container col-xl-10 col-xxl-8 px-4 pb-5 py-md-5" id="contact_form">
         <div class="row align-items-center g-lg-5 py-md-5">
-          <div class="col-lg-6 text-center text-lg-start">
+          <div class="col-lg-6 text-center text-lg-start mt-0 mb-3">
             <h1 class="display-4 fw-bold lh-1 mb-3">Get your free estimate</h1>
           </div>
           <div class="col-md-10 mx-auto col-lg-6">
@@ -435,7 +442,7 @@ Technician will come to your home to diagnose and give you an exact quote for re
             
           </div>
         </div>
-        <div class="my-5 pt-5">
+        <div class="mt-5 py-5">
           <h2 class="text-center mb-5 display-5 fw-bold">
             Schedule our service today
           </h2>
@@ -466,7 +473,7 @@ Technician will come to your home to diagnose and give you an exact quote for re
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top"
       >
-        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+        <p class="col-md-4 mb-0 text-muted">&copy; 2023 OEM+</p>
 
         <a
           href="/"
@@ -479,13 +486,13 @@ Technician will come to your home to diagnose and give you an exact quote for re
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
+            <a href="#addresses" class="nav-link px-2 text-muted">Serving areas</a>
+          </li>
+          <li class="nav-item">
             <a href="#why_us" class="nav-link px-2 text-muted">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#booking" class="nav-link px-2 text-muted">Booking</a>
-          </li>
-          <li class="nav-item">
-            <a href="#addresses" class="nav-link px-2 text-muted">Serving area</a>
+            <a href="#booking" class="nav-link px-2 text-muted">How it works</a>
           </li>
         </ul>
       </footer>
