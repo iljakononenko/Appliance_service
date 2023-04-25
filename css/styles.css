@@ -256,6 +256,12 @@ section.form {
     width: 100px !important;
     height: 100px !important;
   }
+
+  .service-svg-wrapper img {
+    font-size: 100px !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 .service {
