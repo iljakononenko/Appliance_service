@@ -3,7 +3,7 @@ $(document).ready(function () {
     let element = `
 <div class="col">
   <div class="card shadow-sm">
-    <img src="./img/examples/${i}.jpg" alt="">
+    <img src="./img/examples/${i}.jpg" loading="lazy" alt="">
   </div>
 </div>
 `;
@@ -93,13 +93,58 @@ $(document).ready(function () {
     $("#zip").val("");
     $("#notes").val("");
 
-    Email.send({
-      SecureToken: "1bd4ec59-a493-466f-931a-39ea36c9b5cb",
-      To: "oemservice2023@gmail.com",
-      From: "iljakononenko3@gmail.com",
-      Subject: "New Order!",
-      Body: `Name: ${name}<br>Phone: ${phone}<br>Zip: ${zip}<br>Notes: ${notes}`,
-    }).then((message) => console.log(message));
+    // Email.send({
+    //   SecureToken: "1bd4ec59-a493-466f-931a-39ea36c9b5cb",
+    //   To: "oemservice2023@gmail.com",
+    //   From: "iljakononenko3@gmail.com",
+    //   Subject: "New Order!",
+    //   Body: `Name: ${name}<br>Phone: ${phone}<br>Zip: ${zip}<br>Notes: ${notes}`,
+    // }).then((message) => console.log(message));
+
+    let message_text = `<b>Name</b>: ${name} %0A<b>Phone</b>: ${phone} %0A<b>Zip</b>: ${zip} %0A<b>Notes</b>: ${notes}`;
+
+    let bot_token = "1347013159:AAGLdwspQRZo7zo2KFJEyCZLW1Wnl0jQixA";
+    let group_chat_id = "-803573574";
+    let chat_id = "647214244";
+    let url = `https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${chat_id}&text=${message_text}&parse_mode=html`;
+
+    let api = new XMLHttpRequest();
+    api.open("GET", url, true);
+    api.send();
+
+    // whatsapp post
+
+    // let whatsAppMessageBody = {
+    //   messaging_product: "whatsapp",
+    //   to: "48692891846",
+    //   type: "template",
+    //   template: {
+    //     name: "hello_world",
+    //     language: {
+    //       code: "en_US",
+    //     },
+    //   },
+    // };
+
+    // let url = "https://graph.facebook.com/v16.0/101027519659635/messages";
+    // let header = "Content-Type: application/json";
+    // let authorization =
+    //   "Bearer EAAJVKX0HAuMBALlRvXjwqgDf9qkHxSOdDtCPEw1n9KPqoUZARHuesFM4BQjaMFoJEXFTwpNUDB36Y3IZCygfjz22mtw8OZAbGIhpjwcQ4IwvmFQuzhE9VIRCIasOrq63Tf4whpR0XImDAozxFU6iCqiimQ4oX7X1fJgGBZB6RfqFJevbjlnMHxZBdKXRfXyPdDidr56drPgZDZD";
+
+    // let version = "16.0";
+    // let phone_number_from = "101027519659635";
+    // let phone_number_to = "48692891846";
+
+    // fetch(url, {
+    //   method: "POST",
+    //   body: JSON.stringify(whatsAppMessageBody),
+    //   headers: {
+    //     "Content-type": "application/json; charset=UTF-8",
+    //     Authorization: authorization,
+    //   },
+    // });
+
+    // end of sending request
   });
 
   $("#header-fixer").css("paddingTop", $("nav.fixed-top").outerHeight());
@@ -110,3 +155,12 @@ $(document).ready(function () {
 });
 
 // data-bs-target="#modal" data-bs-toggle="modal"
+
+/*
+New order - Appliance repair
+Name: {{1}}
+Phone: {{2}}
+Zip: {{3}}
+Notes: {{4}}
+
+*/
