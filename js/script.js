@@ -106,7 +106,7 @@ $(document).ready(function () {
     let bot_token = "1347013159:AAGLdwspQRZo7zo2KFJEyCZLW1Wnl0jQixA";
     let group_chat_id = "-803573574";
     let chat_id = "647214244";
-    let url = `https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${chat_id}&text=${message_text}&parse_mode=html`;
+    let url = `https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${group_chat_id}&text=${message_text}&parse_mode=html`;
 
     let api = new XMLHttpRequest();
     api.open("GET", url, true);
