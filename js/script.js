@@ -242,6 +242,34 @@ $(document).ready(function () {
     );
   });
 
+  $(".book_online_button").on("click", function (e) {
+    e.preventDefault();
+    let target = $(this).attr("href");
+
+    let additional_padding = 0;
+    if (target == "#booking") {
+      additional_padding = 130;
+    } else if (target == "#contact_form") {
+      additional_padding = 60;
+    }
+
+    if (window.innerWidth < 768) {
+      additional_padding += 150;
+      if (target == "#addresses") {
+        additional_padding += 60;
+      } else if (target == "#contact_form") {
+        additional_padding += 100;
+      }
+    }
+
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - additional_padding,
+      },
+      0
+    );
+  });
+
   $("#free_estimate").on("submit", function (e) {
     e.preventDefault();
     myModalAlternative.show();
