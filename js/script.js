@@ -125,6 +125,7 @@ $(document).ready(function () {
     let opinion_element = `
   <div class="opinion-box text-center">
           <div class="opinion-stars d-flex justify-content-center" style="height: 22px; margin-bottom: 16px;">
+          <img src="img/google_icon.png" style="width: 22px; margin-right: 6px" >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.44 19"><polygon fill="#fdd663" points="10,15.27 16.18,19 14.54,11.97 20,7.24 12.81,6.63 10,0 7.19,6.63 0,7.24 5.46,11.97 3.82,19"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.44 19"><polygon fill="#fdd663" points="10,15.27 16.18,19 14.54,11.97 20,7.24 12.81,6.63 10,0 7.19,6.63 0,7.24 5.46,11.97 3.82,19"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.44 19"><polygon fill="#fdd663" points="10,15.27 16.18,19 14.54,11.97 20,7.24 12.81,6.63 10,0 7.19,6.63 0,7.24 5.46,11.97 3.82,19"/></svg>
