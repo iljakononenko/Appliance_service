@@ -123,8 +123,8 @@ $(document).ready(function () {
 
   for (let { positive, text, service, author } of opinions) {
     let opinion_element = `
-  <div class="opinion-box text-center">
-          <div class="opinion-stars d-flex justify-content-center" style="height: 22px; margin-bottom: 16px;">
+  <div class="opinion-box">
+          <div class="opinion-stars d-flex" style="height: 22px; margin-bottom: 16px;">
           <img src="img/google_icon.png" style="width: 22px; margin-right: 6px" >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.44 19"><polygon fill="#fdd663" points="10,15.27 16.18,19 14.54,11.97 20,7.24 12.81,6.63 10,0 7.19,6.63 0,7.24 5.46,11.97 3.82,19"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.44 19"><polygon fill="#fdd663" points="10,15.27 16.18,19 14.54,11.97 20,7.24 12.81,6.63 10,0 7.19,6.63 0,7.24 5.46,11.97 3.82,19"/></svg>
@@ -146,10 +146,10 @@ $(document).ready(function () {
           <p class="fw-bold">${author}</p>
         </div>
         `;
-    $("#opinions").append(opinion_element);
+    $("#opinions_gallery").append(opinion_element);
   }
 
-  $("#opinions").owlCarousel({
+  $("#opinions_gallery").owlCarousel({
     loop: true,
     stagePadding: 60,
     dots: true,
@@ -200,6 +200,17 @@ $(document).ready(function () {
     },
   });
 
+  $("#about_us_gallery").owlCarousel({
+    loop: true,
+    dots: true,
+    dotsEach: 1,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    slideSpeed : 300,
+    navigation: true,
+  });
+
   const myModalAlternative = new bootstrap.Modal("#modal", {});
 
   $(".service-svg-wrapper").on("click", function () {
@@ -220,18 +231,18 @@ $(document).ready(function () {
     let target = $(this).attr("href");
 
     let additional_padding = 0;
-    if (target == "#booking") {
-      additional_padding = 130;
-    } else if (target == "#contact_form") {
-      additional_padding = 60;
+    if (target == "#services") {
+      additional_padding = 55;
+    } else if (target == "#opinions") {
+      additional_padding = 75;
+    } else if (target == "#about_us" || target == "#why_us") {
+      additional_padding = 75;
     }
 
     if (window.innerWidth < 768) {
-      additional_padding += 150;
-      if (target == "#addresses") {
-        additional_padding += 60;
-      } else if (target == "#contact_form") {
-        additional_padding += 100;
+      additional_padding += 210;
+      if (target == "#contact_form") {
+        additional_padding += 30;
       }
     }
 
@@ -277,12 +288,10 @@ $(document).ready(function () {
 
     let name = $("#name").val();
     let phone = $("#phone").val();
-    let zip = $("#zip").val();
     let notes = $("#notes").val();
 
     $("#name").val("");
     $("#phone").val("");
-    $("#zip").val("");
     $("#notes").val("");
 
     // Email.send({
@@ -293,7 +302,7 @@ $(document).ready(function () {
     //   Body: `Name: ${name}<br>Phone: ${phone}<br>Zip: ${zip}<br>Notes: ${notes}`,
     // }).then((message) => console.log(message));
 
-    let message_text = `<b>Name</b>: ${name} %0A<b>Phone</b>: ${phone} %0A<b>Zip</b>: ${zip} %0A<b>Notes</b>: ${notes}`;
+    let message_text = `<b>Name</b>: ${name} %0A<b>Phone</b>: ${phone} %0A<b>Notes</b>: ${notes}`;
 
     let bot_token = "1347013159:AAGLdwspQRZo7zo2KFJEyCZLW1Wnl0jQixA";
     let group_chat_id = "-803573574";
