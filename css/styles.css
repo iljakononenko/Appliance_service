@@ -110,6 +110,10 @@ li.book__button:hover {
 .phone-link {
     font-size: 36px;
     font-weight: bold;
+    display: inline-block;
+    padding: 8px 12px;
+    border: 3px solid #fff;
+    border-radius: 8px;
 }
 
 .header__hero * {
@@ -287,6 +291,10 @@ header > nav > .container {
     padding-bottom: 45px;
 }
 
+#contact_form .phone-link {
+    border: 3px solid #00acec;
+}
+
 @media screen and (min-width: 1368px) {
     #addresses {
         padding-bottom: 60px;
@@ -413,7 +421,7 @@ header > nav > .container {
 
 .footer-fixed {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     bottom: 0;
