@@ -4,24 +4,35 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Bold.ttf") format("truetype");
     font-weight: 700;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-     line-height: 1;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
 }
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -259,12 +270,7 @@ section.form {
     height: 150px;
 }
 
-.call_us {
-    background-color: #0d91fd !important;
-    border-color: #0d91fd !important;
-}
-
-.logo-wrapper img{
+.logo-wrapper img {
     width: 90px;
 }
 
@@ -421,11 +427,11 @@ header > nav > .container {
 
 .footer-fixed {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     bottom: 0;
-    background-color: rgba(0,59,100,.1);
+    background-color: rgba(0, 59, 100, 0.1);
     height: 70px;
     width: 100%;
     padding: 0 30px;
