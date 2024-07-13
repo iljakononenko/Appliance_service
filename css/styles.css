@@ -371,6 +371,10 @@ header > nav > .container {
     fill: #fff;
 }
 
+.service:hover svg path {
+    fill: #fff;
+}
+
 @media screen and (min-width: 768px) {
     .service-svg-wrapper svg {
         font-size: 100px !important;
