@@ -278,7 +278,7 @@ $(document).ready(function () {
 
         $("html, body").animate(
             {
-                scrollTop: $(target).offset().top - additional_padding,
+                scrollTop: $(target).offset().top + additional_padding,
             },
             0
         );
